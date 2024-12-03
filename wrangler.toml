@@ -25,6 +25,19 @@ name = "cloudflare-docker-proxy"
 #   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
 # ]
 
+
+routes = [
+ { pattern = "docker.libiary.top", custom_domain = true },
+ { pattern = "quay.libiary.top", custom_domain = true },
+ { pattern = "gcr.libiary.top", custom_domain = true },
+ { pattern = "k8s-gcr.libiary.top", custom_domain = true },
+ { pattern = "k8s.libiary.top", custom_domain = true },
+ { pattern = "ghcr.libiary.top", custom_domain = true },
+ { pattern = "cloudsmith.libiary.top", custom_domain = true },
+ { pattern = "ecr.libiary.top", custom_domain = true },
+ { pattern = "docker-staging.libiary.top", custom_domain = true }
+]
+
 [env.production.vars]
 MODE = "production"
 TARGET_UPSTREAM = ""
